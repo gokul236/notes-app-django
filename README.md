@@ -1,60 +1,70 @@
-Django Notes App
-A clean, minimal Notes Application built using Django, allowing users to create, view, update, and delete notes with a category system.
+# Django Notes App
 
-Features
-✅ Create, edit, and delete notes
-✅ Categorize notes easily
-✅ View detailed note pages
-✅ Confirmation before deleting notes
-✅ Organized, clean Bootstrap-styled templates
-✅ Uses SQLite for lightweight local storage
+A clean, minimal **Notes Application** built using **Django**, allowing users to create, view, update, and delete notes with a category system.
+
+## Features
+
+✅ Create, edit, and delete notes  
+✅ Categorize notes easily  
+✅ View detailed note pages  
+✅ Confirmation before deleting notes  
+✅ Organized, clean Bootstrap-styled templates  
+✅ Uses SQLite for lightweight local storage  
 ✅ Structured for easy further extension
 
-Screenshots
-Add screenshots here if needed (e.g., homepage, create note page, note list view).
+## Screenshots
 
-Installation
-1️⃣ Clone the Repository
-bash
-Copy
-Edit
+_Add screenshots here if needed (e.g., homepage, create note page, note list view)._
+
+## Installation
+
+### 1️⃣ Clone the Repository
+
+```bash
 git clone https://github.com/your-username/notes-app.git
 cd notes-app/notesproject
-2️⃣ Create and Activate Virtual Environment
-bash
-Copy
-Edit
+```
+
+### 2️⃣ Create and Activate Virtual Environment
+
+```bash
 python -m venv venv
 source venv/bin/activate   # macOS/Linux
 venv\Scripts\activate      # Windows
-3️⃣ Install Dependencies
-bash
-Copy
-Edit
-pip install django
-Or if you have a requirements.txt, use:
+```
 
-bash
-Copy
-Edit
+### 3️⃣ Install Dependencies
+
+```bash
+pip install django
+```
+
+Or if you have a `requirements.txt`, use:
+
+```bash
 pip install -r requirements.txt
-4️⃣ Apply Migrations
-bash
-Copy
-Edit
+```
+
+### 4️⃣ Apply Migrations
+
+```bash
 python manage.py makemigrations
 python manage.py migrate
-5️⃣ Run the Server
-bash
-Copy
-Edit
-python manage.py runserver
-Visit http://127.0.0.1:8000 in your browser to access the Notes App.
+```
 
-Project Structure
-markdown
-Copy
-Edit
+### 5️⃣ Run the Server
+
+```bash
+python manage.py runserver
+```
+
+Visit `http://127.0.0.1:8000` in your browser to access the Notes App.
+
+---
+
+## Project Structure
+
+```
 notesproject/
 │
 ├── db.sqlite3
@@ -79,26 +89,34 @@ notesproject/
     ├── urls.py
     ├── wsgi.py
     └── asgi.py
-Technologies Used
-Python 3
+```
 
-Django
+---
 
-SQLite (default database)
+## Technologies Used
 
-Bootstrap for styling
+- **Python 3**
+- **Django**
+- **SQLite** (default database)
+- **Bootstrap** for styling
 
-Future Improvements
-User authentication (login/register)
+---
 
-Rich text editor for notes (CKEditor)
+## Future Improvements
 
-Search and filter notes
+- User authentication (login/register)  
+- Rich text editor for notes (CKEditor)  
+- Search and filter notes  
+- API support for mobile integration (Django REST Framework)
 
-API support for mobile integration (Django REST Framework)
+---
 
-Contributing
+## Contributing
+
 Pull requests are welcome. Please open an issue to discuss your proposed changes before submitting.
 
-License
-This project is licensed under the MIT License.
+---
+
+## License
+
+This project is licensed under the [MIT License](LICENSE).
